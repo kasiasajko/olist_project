@@ -51,11 +51,10 @@ The transformed data is saved as Silver Delta tables and validated after writing
 
 ### Gold
 
-A Databricks Lakeflow Job orchistrates the complete pipeline:
-
-Bronze → Silver → Gold
-
-Task dependencies make sure that each layer runs only after the previous layer was completed successfully.
+The Gold layer contains three business-oriented aggregations:
+- sales per month,
+- delivery performance by customer state,
+- revenue by product category.
 
 ### Gold Layer Outputs
 
@@ -78,6 +77,14 @@ Percentage of late deliveries by customer state:
 Top 10 product categories by revenue:
 
 ![Product Category Performance](images/product_category_performance.png)
+
+## Orchestration
+
+A Databricks Lakeflow Job orchestrates the complete pipeline:
+
+Bronze → Silver → Gold
+
+Task dependencies make sure that each layer runs only after the previous layer has completed successfully.
 
 ## Data Quality and Key Decisions
 
