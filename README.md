@@ -57,6 +57,28 @@ Bronze → Silver → Gold
 
 Task dependencies make sure that each layer runs only after the previous layer was completed successfully.
 
+### Gold Layer Outputs
+
+The Gold layer provides business-oriented aggregations that can be used for reporting and analysis.
+
+#### Monthly Sales
+
+Monthly revenue for delivered orders:
+
+![Monthly Sales](images/monthly_sales.png)
+
+#### Delivery Performance by State
+
+Percentage of late deliveries by customer state:
+
+![Delivery Performance by State](images/delivery_performance_by_state.png)
+
+#### Product Category Performance
+
+Top 10 product categories by revenue:
+
+![Product Category Performance](images/product_category_performance.png)
+
 ## Data Quality and Key Decisions
 
 - Row counts and schemas were reviewed.
